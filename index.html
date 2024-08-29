@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="hours" class="clock"></div>
+        <span id="h">Hours</span>
+        <div id="min" class="clock"></div>
+        <span id="m">min</span>
+        <div id="sec" class="clock"></div>
+        <span id="s">Seconds</span>
+    </div>
+    <script>
+        const hr=document.querySelector("#hours");
+        const min=document.querySelector("#min")
+        const sec=document.querySelector("#sec")    
+        setInterval(()=>{
+         const date=new Date();    
+          hr.innerHTML=date.getHours().toString().padStart(2,"0")
+          min.innerHTML=date.getMinutes().toString().padStart(2,"0")
+          sec.innerHTML=date.getSeconds().toString().padStart(2,"0")
+        },1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.container{
+border: 0px rgb(255, 239, 239) solid;
+width: 500px;
+height: 400px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.banner{
+text-align: center;
+}
+.clock{
+    border: 3px rgb(72 72 72) solid;
+    width: 100px;
+    height: 60px;
+    background-color: #131314;
+    color: white;
+    font-size: 22px;
+    text-align: -webkit-center;
+    padding: 0px 1px;
+    font-size: 44px;
+    box-shadow: 2px 0px 20px 3px grey;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#h{
+    display: inline;
+    position: relative;
+    top: 50px;
+    left: -74px;
+    color: #fff7f7;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#m{
+    display: inline;
+    position: relative;
+    top: 50px;
+    font-weight: bolder;
+    left: -68px;
+    font-size: 20px;
+}
+#s{
+    display: inline;
+    font-weight: bolder;
+    position: relative;
+    top: 50px;
+    left: -85px;
+    font-size: 20px;
+}
